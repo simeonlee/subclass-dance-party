@@ -1,25 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100);
+
 body, html{
   height:100%;
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background: url('./assets/images/whlawn.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /*background-color: rgba(20,20,20,1.0);*/
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: white;
   font-size: 18px;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
 body, a:link, a:visited, a:active{
-  color: lightblue;
+  text-decoration: none;
+  color: white;
 }
-.title, .addDancerButton{
-  padding:5px 12px;
-  float:right;
+.addDancerButton{
+  padding: 10px 12px;
+  float: left;
 }
-.topbar{
-  height:32px;
-  background-color: #555;
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 42px;
+  background-color: rgba(70,70,70,0.6);
+  box-shadow: 0 0px 4px rgba(120,120,120,0.6);
 }
-.title{
-  background-color: #777;
-}
+/*.title{
+  background-color: rgba(90,90,90,0.6);
+}*/
 .dancer{
   /*border:50px solid white;*/
   height: 100px;
@@ -27,7 +45,4 @@ body, a:link, a:visited, a:active{
   border-radius:0;
   position:absolute;
   transition-duration: 0.3s;
-  background: url('./assets/images/trumpface.png');
-  background-size: 100px 100px;
-  background-repeat: no-repeat;
 }

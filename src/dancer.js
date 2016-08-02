@@ -41,6 +41,13 @@ var makeDancer = class makeDancer {
     this.setPosition();
   }
   step() {
+    var delta = this.random(400, -400);
+    var danceSpace = 400;
+    this.$node.css({
+      'transform': 'scale(' + Math.random() + ', ' + Math.random() + ') ' +
+                   'translate(' + Math.random() * danceSpace + 'px, ' + Math.random() * danceSpace + 'px)'
+                   // 'rotateX(' + Math.random() * 10 + 'deg) rotateY(' + Math.random() * 10 + 'deg)'
+    });
     setTimeout(this.step.bind(this), this.timeBetweenSteps);
   }
   setPosition(top, left) {
