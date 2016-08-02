@@ -21,7 +21,13 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+  /*border:50px solid white;*/
+  height: 100px;
+  width: 100px;
+  border-radius:0;
   position:absolute;
+  transition-duration: 0.3s;
+  background: url('./assets/images/trumpface.png');
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
 }
