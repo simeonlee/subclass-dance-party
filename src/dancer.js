@@ -49,6 +49,11 @@ var makeDancer = class makeDancer {
       'left': null
     };
 
+    // if the below is set to true, we will stop the recursive step()
+    // calls so that we can reset timeBetweenSteps and synchronize
+    // the dancers
+    this.breakStep = false;
+
     // push to array for later dance routines / manipulation
     dancers.push(this);
   }
@@ -70,7 +75,9 @@ var makeDancer = class makeDancer {
       '-webkit-transform': 'rotateY(' + this.rotY + 'deg)',
       'transform': 'rotateY(' + this.rotY + 'deg)',
     });
-    setTimeout(this.step.bind(this), this.timeBetweenSteps);
+    if (this.breakStep !== true) {
+      setTimeout(this.step.bind(this), this.timeBetweenSteps);
+    }
   }
   setPosition(bottom, left) {
     var previousPosition = {
