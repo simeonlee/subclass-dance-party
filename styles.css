@@ -42,7 +42,6 @@ body, a:link, a:visited, a:active{
   /*border:50px solid white;*/
   height: 100px;
   width: 100px;
-  border-radius:0;
-  position:absolute;
-  transition-duration: 0.3s;
+  border-radius: 0;
+  position: absolute;
 }

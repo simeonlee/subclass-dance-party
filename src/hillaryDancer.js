@@ -8,10 +8,4 @@ var hillaryDancer = class hillaryDancer extends makeDancer {
       'background-repeat': 'no-repeat'
     });
   }
-  step() {
-    super.step();
-  }
-  random(x, y) {
-    return (Math.random() * (x - y));
-  }
 };

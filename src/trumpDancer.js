@@ -1,4 +1,4 @@
-var makeTrumpDancer = class makeTrumpDancer extends makeDancer {
+var trumpDancer = class trumpDancer extends makeDancer {
   constructor(top, left, timeBetweenSteps) {
     super(top, left, timeBetweenSteps);
     var backgroundUrl = 'url("./assets/images/trump/' + Math.floor(Math.random() * 4) + '.png")';
@@ -7,11 +7,5 @@ var makeTrumpDancer = class makeTrumpDancer extends makeDancer {
       'background-size': '100px 100px',
       'background-repeat': 'no-repeat'
     });
-  }
-  step() {
-    super.step();
-  }
-  random(x, y) {
-    return (Math.random() * (x - y));
   }
 };

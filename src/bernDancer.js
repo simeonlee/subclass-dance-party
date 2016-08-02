@@ -8,10 +8,4 @@ var bernDancer = class bernDancer extends makeDancer {
       'background-repeat': 'no-repeat'
     });
   }
-  step() {
-    super.step();
-  }
-  random(x, y) {
-    return (Math.random() * (x - y));
-  }
 };
